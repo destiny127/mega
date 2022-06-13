@@ -8,6 +8,7 @@ m = Mega()
 usr = m.login("uploadme@yopmail.com","Bhaibhai45")
 
 while True:
+        time.sleep(1800)
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
         fname = "Time " + str(current_time) + ".txt"
