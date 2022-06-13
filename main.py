@@ -15,9 +15,9 @@ while True:
         with open(fname,"w") as f:
                 f.write(current_time)
                 hdd = psutil.disk_usage('/')
-                f.write("Total: %d GiB", hdd.total / (2**30))
-                f.write("Used: %d GiB" , hdd.used / (2**30))
-                f.write("Free: %d GiB" , hdd.free / (2**30))
+                f.write(f"Total:  {hdd.total / (2**30)} ")
+                f.write(f"Used :  {hdd.used / (2**30)} ")
+                f.write(f"Free :  {hdd.free / (2**30)} ")
 
 
         usr.upload(fname)
